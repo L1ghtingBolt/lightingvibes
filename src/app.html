@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>L1ghtingVibes[pro]</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./assets/milligram.min.css" />
+    <link rel="stylesheet" href="./assets/app.css" />
+  </head>
+
+  <body style="padding: 2rem; background-color:#121212;"></body>
+    <div id="app-logo">
+      <div id="logo">Loading...</div>
+    </div>
+
+    <div id="app-body" class="loading">
+      <table style="display: table">
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <select id="keyboardpack-list" class="custom-input mb-0" style="width: 100%; margin-right: 10px; background-color:#1f1f1f; color:#adadad"></select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <select id="mousepack-list" class="custom-input mb-0 hidden" style="width: 100%; margin-right: 10px; background-color:#1f1f1f; color:#adadad"></select>
+              <div style="text-align: right">
+                <small>
+                  <a href="https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/" class="open-in-browser">Join our Discord.</a>
+                </small>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td id="KeyVolSlider" style="width: 50%; color:#ebebeb"; color=>Keyboard Volume <span id="keyboard-volume-value-display" style="font-weight: bold; color:#ebebeb"></span></td>
+            <td style="width: 50%">
+              <input type="range" min="0" max="100" value="20" step="5" class="slider mb-0" id="keyvolume" style="width: 100%" />
+            </td>
+          </tr>
+          <tr>
+            <td id="MouseVolSlider" class="hidden" style="width: 50%; color:#ebebeb"; color=>Mouse Volume <span id="mouse-volume-value-display" class="hidden" style="font-weight: bold; color:#ebebeb"></span></td>
+            <td style="width: 50%">
+              <input type="range" min="0" max="100" value="20" step="5" class="slider mb-0 hidden" id="mousevolume" style="width: 100%" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="divider"></div>
+      <div style="color: #ebebeb; font-size: 12px; text-align: center">
+        <p>Made with ❤ by <a href="https://github.com/L1ghtingBolt/L1ghtingvibes" class="open-in-browser">Forkerion</a></p>
+        <p>
+          <a href="https://mechvibes.com" class="open-in-browser">Support Original Mechvibes</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://github.com/L1ghtingBolt/L1ghtingvibes" class="open-in-browser">Our GitHub</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="https://github.com/L1ghtingBolt/L1ghtingvibes" class="open-in-browser">Newest Version</a>
+        </p>  
+        <p id="app-version" style="color: #9b9b9b">-</p>
+        <div id="update-available" class="hidden">
+          New version of L1ghtingVibes is available (<span id="new-version">-</span>)
+          <div style="margin-top: 5px">
+            <a href="https://github.com/L1ghtingBolt/L1ghtingvibes" class="open-in-browser">View Update on GitHub</a>
+          </div>
+      </div>
+      <div id="soundpack-bug" class="hidden" style="position:relative; top:10px">
+        Some of your soundpacks are broken. They have not been loaded.
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+{
+  "name": "l1ghtingvibes",
+  "productName": "L1ghtingVibes",
+  "version": "v1.0.0",
+  "description": "Play mechanical keyboard sounds as you type, but better!",
+  "repository": "https://github.com/L1ghtingBolt/L1ghtingvibes",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder -w",
+    "build:mac": "electron-builder -m",
+    "build:linux": "electron-builder -l"
+  },
+  "keywords": [],
+  "homepage": "https://forkerion.gq",
+  "author": {
+    "name": "L1ghtingBolt",
+    "email": "l1ghtingbolt.exploits@gmail.com"
+  },
+  "license": "MIT",
+  "iohook": {
+    "targets": [
+      "node-64",
+      "electron-73"
+    ],
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64"
+    ]
+  },
+  "build": {
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/assets/icon.png"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/assets/icon.png"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "snap",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "src/assets/icon.png"
+    }
+  },
+  "dependencies": {
+    "electron-store": "^6.0.0",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "howler": "^2.1.2",
+    "iohook": "^0.6.2"
+  },
+  "devDependencies": {
+    "app-builder-lib": "^22.2.0",
+    "electron": "^6.1.5",
+    "electron-builder": "^21.2.0",
+    "electron-compile": "^6.4.4",
+    "electron-packager": "^14.1.1"
+  }
+}
