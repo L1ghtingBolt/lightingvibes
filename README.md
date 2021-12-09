@@ -36,4 +36,4 @@ Simply do `npm run build:win/linux/mac`.
 
 ### Issues
 
-🤝 Any ideas are welcomed!
+🤝 Any ideas are welcomed! And, if you need help, enter this discord: https://discord.gg/aXTNRTqXPF
