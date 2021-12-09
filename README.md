@@ -36,4 +36,6 @@ Simply do `npm run build:win/linux/mac`.
 
 ### Issues
 
+At installing, install for all users, otherwise it may not work properly.
+
 🤝 Any ideas are welcomed! And, if you need help, enter this discord: https://discord.gg/aXTNRTqXPF
