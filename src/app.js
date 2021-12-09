@@ -331,7 +331,7 @@ function packsToOptions(packs, pack_list, korm) {
     fetch('https://github.com/L1ghtingBolt/lightingvibes')
       .then((res) => res.json())
       .then((json) => {
-        if (json.tag_name > APP_VERSION) {
+        if (json.tag_name != APP_VERSION) {
           new_version.innerHTML = json.tag_name;
           update_available.classList.remove('hidden');
         }

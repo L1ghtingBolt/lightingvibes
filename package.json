@@ -1,7 +1,7 @@
 {
   "name": "l1ghtingvibes",
   "productName": "L1ghtingVibes",
-  "version": "v1.0.2b",
+  "version": "v1.0.3",
   "description": "Play mechanical keyboard sounds as you type, but better!",
   "repository": "https://github.com/L1ghtingBolt/lightingvibes",
   "main": "src/main.js",
@@ -34,10 +34,10 @@
   },
   "build": {
     "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
+      "oneClick": true
     },
     "win": {
+      "requestedExecutionLevel": "requireAdministrator",
       "target": [
         {
           "target": "nsis",
