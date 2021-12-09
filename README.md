@@ -1,8 +1,6 @@
-![Mechvibes](https://i.imgur.com/78qUULA.jpg)
+# L1ghtingvibes
 
-# Mechvibes
-
-It's a side project that I made for myself since when I use my own mechanical keyboard at late night or in the office and my parents and my coworkers hate that a lot because the sound of the keyboard is very loud (especially in quiet places). So if you are facing this issue just like me then this product is for you!
+It's a side project that I made for myself since when I use my own membrane keyboard and it does not have a really good sound, so I tried MechvibesPlusPlus and was amazing, but there was some little things that I decided to upgrade.
 
 - You can add more keyboard sound set by recording any sound you like and add them to this app with some easy steps.
 
@@ -10,13 +8,31 @@ It's a side project that I made for myself since when I use my own mechanical ke
 
 - Use this app as any purpose as you want (such as demo for the buyer about the keyboard sound before they buy it, custom any sound for any key...)
 
-With Mechvibes Editor, you can create a new sound pack, edit existing sound pack or share them with your friends.
+- Added better random sounds.
 
-### How to use
+- KeyUp sound as well as mouse sounds.
 
-- Download it from [Releases](https://github.com/hainguyents13/mechvibes/releases/latest)
+With L1ghtingVibes Editor, you can create a new sound pack, edit existing sound pack or share them with your friends.
+
+### How to use and install
+
+- Download it from [Releases](https://github.com/L1ghtingBolt/lightingvibes/releases/latest)
 - Run it.
 - Enjoy it.
+- To use mouse, keyup or random sounds, right click it in the system tray.
+
+
+## Building
+
+As the original Mechvibes or MechvibesPlusPlus don't have build instructions, I'm gonna do them myself.
+
+### Building Dependencies:
+1. Install NodeJS,
+2. Install yarn: `npm install yarn`
+3. Install dependencies. Execute this command in l1ghtingvibes directory: `yarn install`.
+
+### Building the app.
+Simply do `npm run build:win/linux/mac`.
 
 ### Issues
 
