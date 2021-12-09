@@ -17,7 +17,7 @@ With L1ghtingVibes Editor, you can create a new sound pack, edit existing sound 
 ### How to use and install
 
 - Download it from [Releases](https://github.com/L1ghtingBolt/lightingvibes/releases/latest)
-- Run it.
+- Run it. Install for all users.
 - Enjoy it.
 - To use mouse, keyup or random sounds, right click it in the system tray.
 
