@@ -1,9 +1,9 @@
 {
   "name": "l1ghtingvibes",
   "productName": "L1ghtingVibes",
-  "version": "v1.0.0",
+  "version": "v1.0.2b",
   "description": "Play mechanical keyboard sounds as you type, but better!",
-  "repository": "https://github.com/L1ghtingBolt/L1ghtingvibes",
+  "repository": "https://github.com/L1ghtingBolt/lightingvibes",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",

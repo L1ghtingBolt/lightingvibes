@@ -328,7 +328,7 @@ function packsToOptions(packs, pack_list, korm) {
     packsToOptions(mousepacks, mousepack_list, 'mouse');
 
     // check for new version
-    fetch('https://github.com/L1ghtingBolt/L1ghtingvibes')
+    fetch('https://github.com/L1ghtingBolt/lightingvibes')
       .then((res) => res.json())
       .then((json) => {
         if (json.tag_name > APP_VERSION) {
