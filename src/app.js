@@ -337,6 +337,7 @@ function packsToOptions(packs, pack_list, korm) {
         }
       });
 
+});
     // a little hack for open link in browser
     Array.from(document.getElementsByClassName('open-in-browser')).forEach((elem) => {
       elem.addEventListener('click', (e) => {
