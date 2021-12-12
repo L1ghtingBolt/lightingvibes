@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
     <link rel="stylesheet" href="./assets/milligram.min.css" />
-    <link rel="stylesheet" href="./assets/app.css" />
+    <link rel="stylesheet" id="css" href="./assets/app.css" />
   </head>
 
-  <body style="padding: 2rem; background-color:rgb(0, 80, 199);"></body>
+  <body style="padding: 2rem; background-color:#212b42;"></body>
     <div id="app-logo">
       <div id="logo">Loading...</div>
     </div>
@@ -19,10 +19,10 @@
         <tbody>
           <tr>
             <td colspan="2">
-              <select id="keyboardpack-list" class="custom-input mb-0" style="width: 100%; margin-right: 10px; background-color:rgb(0, 54, 134); color:#adadad"></select>
+              <select id="keyboardpack-list" class="custom-input mb-0" style="width: 100%; margin-right: 10px; background-color: #5c7da5; color:#91b4d5;"></select>
             </td>
             <tr>
-              <td id="KeyVolSlider" style="width: 50%; color:#ebebeb"; color=><span id="keyboard-volume-value-display" style="font-weight: bold; color:#aeefff"></span></td>
+              <td id="KeyVolSlider" style="width: 50%; color:#91b4d5;"; color=><span id="keyboard-volume-value-display" style="font-weight: bold; color:#91b4d5"></span></td>
               <td style="width: 50%">
                 <input type="range" min="0" max="100" value="20" step="5" class="slider mb-0" id="keyvolume" style="width: 100%" />
               </td>
@@ -30,7 +30,7 @@
           </tr>
           <tr>
             <td colspan="2">
-              <select id="mousepack-list" class="custom-input mb-0 hidden" style="width: 100%; margin-right: 10px; background-color:rgb(0, 54, 134); color:#aeefff;"></select>
+              <select id="mousepack-list" class="custom-input mb-0 hidden" style="width: 100%; margin-right: 10px; background-color: #5c7da5; color:#91b4d5;"></select>
               <div style="text-align: right">
                 <small>
                   <a href="https://docs.google.com/spreadsheets/d/1PimUN_Qn3CWqfn-93YdVW8OWy8nzpz3w3me41S8S494/" class="open-in-browser">Get more soundpacks.</a>
@@ -39,7 +39,7 @@
             </td>
           </tr>
           <tr>
-            <td id="MouseVolSlider" class="hidden" style="width: 50%; color:#ebebeb"; color=><span id="mouse-volume-value-display" class="hidden" style="font-weight: bold; color:#ebebeb"></span></td>
+            <td id="MouseVolSlider" class="hidden" style="width: 50%; color:#001a0b;"; color=><span id="mouse-volume-value-display" class="hidden" style="font-weight: bold; color:#91b4d5"></span></td>
             <td style="width: 50%">
               <input type="range" min="0" max="100" value="20" step="5" class="slider mb-0 hidden" id="mousevolume" style="width: 100%" />
             </td>
@@ -49,6 +49,7 @@
         </tbody>
       </table>
       <div class="divider"></div>
+      <input type="file" class="input" name="upload" accept=".css" id="file-selection">Select CSS</input>
       <div style="color: #ebebeb; font-size: 12px; text-align: center">
         <p>Made with ❤ by <a href="https://github.com/L1ghtingBolt/lightingvibes" class="open-in-browser">Forkerion</a></p>
         <p>

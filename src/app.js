@@ -295,6 +295,8 @@ function packsToOptions(packs, pack_list, korm) {
   });
 }
 
+
+
 // ==================================================
 // main
 (function (window, document) {
@@ -312,6 +314,10 @@ function packsToOptions(packs, pack_list, korm) {
     const mouse_volume = document.getElementById('mousevolume');
     const mouseslider = document.getElementById('MouseVolSlider');
     const soundpackbug = document.getElementById('soundpack-bug');
+//customcss
+    const btn = document.getElementById('file-selection');
+
+
 
     // set app version
     version.innerHTML = APP_VERSION;
@@ -336,8 +342,6 @@ function packsToOptions(packs, pack_list, korm) {
           update_available.classList.remove('hidden');
         }
       });
-
-});
     // a little hack for open link in browser
     Array.from(document.getElementsByClassName('open-in-browser')).forEach((elem) => {
       elem.addEventListener('click', (e) => {
@@ -454,7 +458,37 @@ function packsToOptions(packs, pack_list, korm) {
     if(is_random){
       randomSounds = true
     }
-
+    let theText;
+    function readTextFile(file)
+    {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                theText = allText;
+            }
+        }
+    }
+    
+    rawFile.send(null);
+   }
+    btn.addEventListener('change', () => {
+;   
+        var head  = document.getElementsByTagName('head')[0];
+        var link  = document.createElement('link');
+        link.id   = 'css';
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.href = btn.files[0].path;
+        link.media = 'all';
+        head.appendChild(link);
+            
+    })
     ipcRenderer.on('RandomSoundEnable', function (_event, _is_random) {
       is_random = _is_random;
       if (is_random) {
