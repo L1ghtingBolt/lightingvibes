@@ -1,6 +1,6 @@
 a,
 a:hover {
-  color: #91b4d5;
+  color: #cdc6bc;
 }
 
 a:hover {
@@ -16,15 +16,60 @@ a:hover {
 #logo {
   font-family: sans-serif;
   transition: all 0.1s ease;
-  box-shadow: 0 2px #91b4d5;
+  box-shadow: 0 2px #c82931;
   font-size: 3rem;
   font-weight: 600;
-  background: #111111;
+  background: #d6686f;
   text-align: center;
   border-radius: 0.5rem;
-  border: 2px solid #91b4d5;
+  border: 2px solid #c82931;
   padding: 1rem 2rem;
-  color: #91b4d5;
+  color: #cdc6bc;
+}
+
+body{
+  padding: 2rem; 
+  background-color:#1f4437;
+}
+
+#mousepack-list{
+  width: 100%;
+  margin-right: 10px;
+  background-color: #3e7a65; 
+  color:#cdc6bc;
+}
+
+#keyboardpack-list{
+  width: 100%;
+  margin-right: 10px;
+  background-color: #3e7a65;
+  color:#cdc6bc;
+}
+
+input[type="file"] {
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+.custom-file-upload {
+  border: 1px solid #d6686f;
+  border-radius: 4px;
+  background: #3e7a65;
+  display: flex;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #cdc6bc;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+
+#keyboard-volume-value-display{
+  font-weight: bold; color:#cdc6bc
+}
+
+#mouse-volume-value-display{
+  font-weight: bold; color:#cdc6bc
 }
 
 #logo.pressed {

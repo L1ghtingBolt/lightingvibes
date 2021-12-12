@@ -1,6 +1,6 @@
 a,
 a:hover {
-  color: #91b4d5;
+  color: #ffffff;
 }
 
 a:hover {
@@ -13,9 +13,37 @@ a:hover {
   margin-bottom: 50px;
 }
 
+#logo {
+  font-family: sans-serif;
+  transition: all 0.1s ease;
+  box-shadow: 0 2px #c6915e;
+  font-size: 3rem;
+  font-weight: 600;
+  background: #f2ce83;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 2px solid #c6915e;
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
 
-body {
-  padding: 20px;
+body{
+  padding: 2rem; 
+  background-color:#241963;
+}
+
+#mousepack-list{
+  width: 100%;
+  margin-right: 10px;
+  background-color: #446ad5; 
+  color:#ffffff;
+}
+
+#keyboardpack-list{
+  width: 100%;
+  margin-right: 10px;
+  background-color: #446ad5;
+  color:#ffffff;
 }
 
 input[type="file"] {
@@ -26,56 +54,22 @@ input[type="file"] {
 .custom-file-upload {
   border: 1px solid #91b4d5;
   border-radius: 4px;
-  background: #5c7da5;
+  background: #446ad5;
   display: flex;
   padding: 6px 12px;
   cursor: pointer;
-  color: #b8d3ec;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   margin: auto;
 }
 
 #keyboard-volume-value-display{
-  font-weight: bold; color:#91b4d5
+  font-weight: bold; color:#fff
 }
 
 #mouse-volume-value-display{
-  font-weight: bold; color:#91b4d5
-}
-
-body{
-  padding: 2rem; 
-  background-color:#212b42;
-}
-
-#mousepack-list{
-  width: 100%;
-  margin-right: 10px;
-  background-color: #5c7da5; 
-  color:#ffffff;
-}
-
-#keyboardpack-list{
-  width: 100%;
-  margin-right: 10px;
-  background-color: #5c7da5;
-  color:#ffffff;
-}
-
-
-#logo {
-  font-family: sans-serif;
-  transition: all 0.1s ease;
-  box-shadow: 0 2px #91b4d5;
-  font-size: 3rem;
-  font-weight: 600;
-  background: #5c7da5;
-  text-align: center;
-  border-radius: 0.5rem;
-  border: 2px solid #91b4d5;
-  padding: 1rem 2rem;
-  color: #91b4d5;
+  font-weight: bold; color:#fff
 }
 
 #logo.pressed {

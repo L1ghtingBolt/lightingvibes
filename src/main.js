@@ -27,8 +27,8 @@ fs.ensureDirSync(mousecustom_dir);
 function createWindow(show = true) {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 400,
-    height: 680,
+    width: 450,
+    height: 750,
     webSecurity: false,
     // resizable: false,
     // fullscreenable: false,
@@ -133,25 +133,25 @@ if (!gotTheLock) {
         },
       },
       {
-        label: 'Open Editor',
+        label: 'Editor',
         click: function () {
           openEditorWindow();
         },
       },
       {
-        label: 'Keyboard Sound Custom Folder',
+        label: 'Keyboard Sound Folder',
         click: function () {
           shell.openItem(keyboardcustom_dir);
         },
       },
       {
-        label: 'Mouse Sound Custom Folder',
+        label: 'Mouse Sound Folder',
         click: function () {
           shell.openItem(mousecustom_dir);
         },
       },
       {
-        label: 'Open Devtools',
+        label: 'Devtools',
         click: function () {
           win.openDevTools();
           win.webContents.openDevTools();
