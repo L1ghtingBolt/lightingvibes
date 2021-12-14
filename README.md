@@ -8,9 +8,11 @@ It's a side project that I made for myself since when I use my own membrane keyb
 
 - Use this app as any purpose as you want (such as demo for the buyer about the keyboard sound before they buy it, custom any sound for any key...)
 
-- Added better random sounds.
-
 - KeyUp sound as well as mouse sounds.
+
+- Theme selector
+
+- Onscreen keys
 
 With L1ghtingVibes Editor, you can create a new sound pack, edit existing sound pack or share them with your friends.
 
